@@ -1,5 +1,6 @@
 {
-  "name": "component-npm-publish-test",
+  "name": "@mkmk4423/component-npm-publish-test",
+  "repository": "git@github.com:hir0o/component-npm-publish-test.git",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
