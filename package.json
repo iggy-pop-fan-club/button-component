@@ -2,11 +2,13 @@
   "name": "@mkmk4423/component-npm-publish-test",
   "repository": "git@github.com:hir0o/component-npm-publish-test.git",
   "description": "",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.1.0",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build:lib": "tsc -p tsconfig.build.json",
+    "build:esm": "tsc -p tsconfig.esm.build.json"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
