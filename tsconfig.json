@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./esm",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "target": "es2020",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "types": [ "react",], // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
+    "jsx": "react",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["./src/*"]
+
+    },
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
