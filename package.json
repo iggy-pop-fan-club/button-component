@@ -1,5 +1,5 @@
 {
-  "name": "component-npm-publish-test",
+  "name": "@hir0o/component-npm-publish-test",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
