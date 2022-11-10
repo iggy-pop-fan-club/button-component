@@ -2,14 +2,15 @@
   "name": "@mkmk4423/button-component",
   "repository": "git@github.com:hir0o/button-component.git",
   "description": "",
-  "version": "1.1.1",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
+  "version": "1.1.6",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "license": "MIT",
   "scripts": {
     "build": "run-p build:*",
     "build:lib": "tsc -p tsconfig.build.json",
-    "build:esm": "tsc -p tsconfig.esm.build.json"
+    "build:esm": "tsc -p tsconfig.esm.build.json",
+    "prepublishOnly": "run-p build"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
@@ -20,5 +21,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "typings": "lib/index.d.ts"
 }
